@@ -10,6 +10,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Debug Config
+        run: ls -la
+
       - name: Run Super-Linter
         uses: github/super-linter@v4
         env:
